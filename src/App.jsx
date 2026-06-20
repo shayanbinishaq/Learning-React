@@ -6,6 +6,7 @@ import "./App.css";
 import AnimatedList from "./Components/AnimatedList";
 import BorderGlow from "./Components/BorderGlow";
 import Car from "./Components/Car";
+import Navbar from "./Components/Navbar";
 
 const items = [
   "Item 1",
@@ -124,6 +125,7 @@ function App() {
         </p>
       </div>
       <Car />
+      <Navbar></Navbar>
     </>
   );
 }
