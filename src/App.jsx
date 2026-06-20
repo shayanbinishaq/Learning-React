@@ -125,7 +125,7 @@ function App() {
         </p>
       </div>
       <Car />
-      <Navbar></Navbar>
+      <Navbar/>
     </>
   );
 }
