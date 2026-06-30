@@ -1,0 +1,60 @@
+.btn {
+  background-color: blueviolet;
+  color: white;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: rgb(176, 93, 255);
+  color: white;
+}
+
+.about-btn {
+  background-color: blueviolet;
+  color: white;
+}
+
+.about-btn:hover {
+  background-color: rgb(176, 93, 255);
+  color: white;
+}
+
+.About-us {
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+}
+.dark {
+  background-color: #1f2020;
+  color: white;
+}
+
+/* Accordion base fix */
+.dark .accordion-item {
+  background-color: #1f2020;
+  border: 1px solid #444;
+}
+
+/* Button */
+.dark .accordion-button {
+  background-color: #1f2020 !important;
+  color: white !important;
+  box-shadow: none !important;
+}
+
+/* Arrow fix (IMPORTANT) */
+.dark .accordion-button::after {
+  filter: invert(1);
+}
+
+/* Open state */
+.dark .accordion-button:not(.collapsed) {
+  background-color: #2a2a2a !important;
+  color: white !important;
+}
+
+/* Body */
+.dark .accordion-body {
+  background-color: #1f2020;
+  color: white;
+}

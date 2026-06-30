@@ -1,0 +1,9 @@
+nav{
+    height: 60px;
+}
+.button-darkmode{
+    margin-right: 20px;
+}
+.button-darkmode button{
+    border: none;
+}
