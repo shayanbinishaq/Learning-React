@@ -1,47 +1,25 @@
-import React, { useState } from "react";
+import React from "react";
 import "./About.css";
 
-export default function About() {
-  const [myStyle, setmyStyle] = useState({
-    color: "#1f2020",
-    backgroundColor: "White",
-  });
-  const [btnText, setBtnText] = useState("Enable Dark Mode")
-  const ToggleBtn = () => {
-    if (myStyle.color === "#1f2020") {
-      setmyStyle({
-        color: "white",
-        backgroundColor: "#1f2020",
-      });
-      setBtnText("Enable Light Mode");
-    } else {
-      setmyStyle({
-        color: "#1f2020",
-        backgroundColor: "white",
-      });
-      setBtnText("Enable Dark Mode");
-    }
+export default function About({ mode }) {
+  const isDarkmode = mode === "dark";
+  const myStyle = {
+    color: isDarkmode ? "white" : "#1f2020",
+    backgroundColor: isDarkmode ? "#1f2020" : "white",
   };
 
   return (
-    <div id="About" className={`About-us ${myStyle.color === "#1f2020" ? "" : "dark"}`} style={myStyle}>
-      <div className="button-darkmode">
-        <button
-          onClick={ToggleBtn}
-          type="button"
-          className="btn border-0"
-        >
-          {btnText}
-        </button>
-      </div>
+    <div 
+      id="About" 
+      className={`About-us ${isDarkmode ? "dark" : ""}`} 
+      style={myStyle}
+    >
       <h2>About us</h2>
+      
       <div className="accordion accordion-flush" id="accordionFlushExample">
+        {/* Accordion Item #1 */}
         <div className="accordion-item">
-          <h2
-            className="accordion-header"
-            id="flush-headingOne"
-            style={myStyle}
-          >
+          <h2 className="accordion-header" id="flush-headingOne" style={myStyle}>
             <button
               className="accordion-button collapsed"
               type="button"
@@ -67,12 +45,10 @@ export default function About() {
             </div>
           </div>
         </div>
+
+        {/* Accordion Item #2 */}
         <div className="accordion-item">
-          <h2
-            className="accordion-header"
-            id="flush-headingTwo"
-            style={myStyle}
-          >
+          <h2 className="accordion-header" id="flush-headingTwo" style={myStyle}>
             <button
               className="accordion-button collapsed"
               type="button"
@@ -94,17 +70,14 @@ export default function About() {
             <div className="accordion-body" style={myStyle}>
               Placeholder content for this accordion, which is intended to
               demonstrate the <code>.accordion-flush</code> class. This is the
-              second item's accordion body. Let's imagine this being filled with
-              some actual content.
+              second item's accordion body.
             </div>
           </div>
         </div>
+
+        {/* Accordion Item #3 */}
         <div className="accordion-item">
-          <h2
-            className="accordion-header"
-            id="flush-headingThree"
-            style={myStyle}
-          >
+          <h2 className="accordion-header" id="flush-headingThree" style={myStyle}>
             <button
               className="accordion-button collapsed"
               type="button"
@@ -124,13 +97,10 @@ export default function About() {
             data-bs-parent="#accordionFlushExample"
             style={myStyle}
           >
-            <div className="accordion-body">
+            <div className="accordion-body" style={myStyle}>
               Placeholder content for this accordion, which is intended to
               demonstrate the <code>.accordion-flush</code> class. This is the
-              third item's accordion body. Nothing more exciting happening here
-              in terms of content, but just filling up the space to make it
-              look, at least at first glance, a bit more representative of how
-              this would look in a real-world application.
+              third item's accordion body.
             </div>
           </div>
         </div>
