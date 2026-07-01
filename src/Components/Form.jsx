@@ -141,7 +141,7 @@ export default function Form(props) {
           </p>
           <p>It'll take {0.008 * text.length} minutes to read this</p>
           <h2>Preview</h2>
-          <p>{text}</p>
+          <p>{text.length === 0 ? "No text to preview" : text}</p>
         </div>
       </div>
     </>
