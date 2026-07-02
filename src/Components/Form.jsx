@@ -1,16 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useRef } from "react";
 import "./Form.css";
+import Alert from "./Alert";
 
 export default function Form(props) {
   const [text, setText] = useState("");
-
   const handleUpClick = () => {
     let newtext = text.toUpperCase();
     setText(newtext);
+    if(text.trim() !== ""){
+      props.showAlert("Text converted to uppercase", "success");
+    }
+    else{
+      props.showAlert("Text is empty, nothing to convert", "warning");
+    }
   };
   const handleLowerClick = () => {
     let newtext = text.toLowerCase();
     setText(newtext);
+    if(text.trim() !== ""){
+      props.showAlert("Text converted to lowercase", "success");
+    }
+    else{
+      props.showAlert("Text is empty, nothing to convert", "warning");
+    }
   };
   const handleOnChange = (event) => {
     console.log("On change");
@@ -18,11 +30,18 @@ export default function Form(props) {
   };
   const handleCopyClick = () => {
     navigator.clipboard.writeText(text);
+    if(text.trim() !== ""){
+      props.showAlert("Text copied to clipboard", "success");
+    }
+    else{
+      props.showAlert("Text is empty, nothing to copy", "warning");
+    }
   };
   const handlePasteClick = async () => {
     try {
       const clipboardText = await navigator.clipboard.readText();
       setText(text + clipboardText);
+      props.showAlert("Text pasted from clipboard", "success");
     } catch (err) {
       console.error("failed to read the content: ", err);
     }
@@ -30,10 +49,22 @@ export default function Form(props) {
   const handleClearClick = () => {
     let newtext = "";
     setText(newtext);
+    if (text.trim() !== "") {
+      props.showAlert("Text cleared", "success");
+    }
+    else {
+      props.showAlert("Text is already empty", "warning");
+    }
   };
   const handleExtraSpaces = () => {
     let newText = text.split(/[ ]+/);
     setText(newText.join(" "));
+    if(text.trim() !== ""){
+      props.showAlert("Extra spaces removed", "success");
+    }
+    else{
+      props.showAlert("Text is empty, nothing to remove", "warning");
+    }
   };
   const handleSentenceClick = () => {
     let sentences = text.split(". ");
@@ -48,6 +79,12 @@ export default function Form(props) {
     }
     let newText = sentences.join(". ");
     setText(newText);
+    if(text.trim() !== ""){
+      props.showAlert("Text converted to sentence case", "success");
+    }
+    else{
+      props.showAlert("Text is empty, nothing to convert", "warning");
+    }
   };
   return (
     <>

@@ -16,3 +16,7 @@ li{
 html{
   scroll-behavior: smooth;
 }
+.alert{
+  position: fixed;
+  left:20px;
+}
