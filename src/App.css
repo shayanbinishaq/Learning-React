@@ -19,4 +19,6 @@ html{
 .alert{
   position: fixed;
   left:20px;
+  width: 300px;
+  z-index: 9999;
 }

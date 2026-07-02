@@ -9,3 +9,11 @@ textarea{
 .Text_summary{
     margin-top: 20px;
 }
+#btn_s{
+    background-color: blueviolet;
+    color: white;
+}
+#btn_s:hover{
+    background-color: rgb(176, 93, 255);
+    color: white;
+}

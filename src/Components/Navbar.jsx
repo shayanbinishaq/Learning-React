@@ -41,6 +41,12 @@ export default function Navbar({
                 </a>
               </li>
             </ul>
+            <div className="color-themes">
+              <button className="theme" className="btn btn-primary" onClick={()=>{document.body.style.backgroundColor='#0d6efd';}}> </button>
+              <button className="btn btn-danger" onClick={()=>{document.body.style.backgroundColor='#dc3545';}}> </button>
+              <button className="btn btn-success" onClick={()=>{document.body.style.backgroundColor='#198754';}}> </button>
+              <button className="btn btn-warning" onClick={()=>{document.body.style.backgroundColor='#ffc107';}}> </button> 
+            </div>
             <div className={`form-check form-switch text-${mode==='light'? 'dark': 'light'}`}>
               <input
                 className="form-check-input"
@@ -55,16 +61,6 @@ export default function Navbar({
                 {modeLabel}
               </label>
             </div>
-            <form className="d-flex">
-              <input
-                className="form-control me-2"
-                type="text"
-                placeholder="Search"
-              />
-              <button className="btn border-0" type="button">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>

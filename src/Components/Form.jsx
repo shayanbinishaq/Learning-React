@@ -112,7 +112,7 @@ export default function Form(props) {
             rows="3"
           ></textarea>
         </div>
-        <div className="button">
+        <div className="buttons">
           <button
             type="input"
             className="btn"

@@ -26,3 +26,15 @@ nav{
     cursor: pointer;
     user-select: none;
 }
+.color-themes {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+.color-themes button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
