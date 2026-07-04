@@ -1,7 +1,4 @@
 import { useState, useRef } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
-import heroImg from "./assets/hero.png";
 import Navbar from "./Components/Navbar";
 import Form from "./Components/Form";
 import About from "./Components/About";
@@ -12,7 +9,6 @@ import { Routes, Route } from "react-router-dom";
 import shayanImg from "./assets/shayan.png";
 
 function App() {
-  const [count, setCount] = useState(0);
   const [alert, setalert] = useState(null);
   const alertTimeoutRef = useRef(null);
   const showAlert = (message, Type) => {

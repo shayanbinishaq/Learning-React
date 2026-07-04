@@ -1,6 +1,5 @@
-import React, { useEffect, useState,useRef } from "react";
+import { useState } from "react";
 import "./Form.css";
-import Alert from "./Alert";
 
 export default function Form(props) {
   const [text, setText] = useState("");
