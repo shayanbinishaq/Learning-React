@@ -9,17 +9,21 @@ export default function About({ mode }) {
   };
 
   return (
-    <div 
-      id="About" 
-      className={`About-us ${isDarkmode ? "dark" : ""}`} 
+    <div
+      id="About"
+      className={`About-us ${isDarkmode ? "dark" : ""}`}
       style={myStyle}
     >
       <h2>About us</h2>
-      
+
       <div className="accordion accordion-flush" id="accordionFlushExample">
         {/* Accordion Item #1 */}
         <div className="accordion-item">
-          <h2 className="accordion-header" id="flush-headingOne" style={myStyle}>
+          <h2
+            className="accordion-header"
+            id="flush-headingOne"
+            style={myStyle}
+          >
             <button
               className="accordion-button collapsed"
               type="button"
@@ -29,7 +33,7 @@ export default function About({ mode }) {
               aria-controls="flush-collapseOne"
               style={myStyle}
             >
-              Accordion Item #1
+              what is TextUtils?
             </button>
           </h2>
           <div
@@ -39,16 +43,19 @@ export default function About({ mode }) {
             data-bs-parent="#accordionFlushExample"
           >
             <div className="accordion-body" style={myStyle}>
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> class. This is the
-              first item's accordion body.
+              TextUtils is a simple and powerful text utility application that
+              helps you edit, analyze, and format text quickly.
             </div>
           </div>
         </div>
 
         {/* Accordion Item #2 */}
         <div className="accordion-item">
-          <h2 className="accordion-header" id="flush-headingTwo" style={myStyle}>
+          <h2
+            className="accordion-header"
+            id="flush-headingTwo"
+            style={myStyle}
+          >
             <button
               className="accordion-button collapsed"
               type="button"
@@ -58,7 +65,7 @@ export default function About({ mode }) {
               aria-controls="flush-collapseTwo"
               style={myStyle}
             >
-              Accordion Item #2
+              What it does
             </button>
           </h2>
           <div
@@ -68,16 +75,18 @@ export default function About({ mode }) {
             data-bs-parent="#accordionFlushExample"
           >
             <div className="accordion-body" style={myStyle}>
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> class. This is the
-              second item's accordion body.
+              It provides useful features such as word counting, case conversion, text cleanup, and reading time estimation to improve productivity.
             </div>
           </div>
         </div>
 
         {/* Accordion Item #3 */}
         <div className="accordion-item">
-          <h2 className="accordion-header" id="flush-headingThree" style={myStyle}>
+          <h2
+            className="accordion-header"
+            id="flush-headingThree"
+            style={myStyle}
+          >
             <button
               className="accordion-button collapsed"
               type="button"
@@ -87,7 +96,7 @@ export default function About({ mode }) {
               aria-controls="flush-collapseThree"
               style={myStyle}
             >
-              Accordion Item #3
+              how it was made
             </button>
           </h2>
           <div
@@ -98,9 +107,7 @@ export default function About({ mode }) {
             style={myStyle}
           >
             <div className="accordion-body" style={myStyle}>
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> class. This is the
-              third item's accordion body.
+              Built with React and Bootstrap, TextUtils offers a fast, responsive, and user-friendly experience for students, writers, and professionals.
             </div>
           </div>
         </div>

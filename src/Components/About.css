@@ -31,3 +31,12 @@
   background-color: #1f2020;
   color: white;
 }
+
+@media (max-width: 576px) {
+  .About-us {
+    width: calc(100% - 1rem);
+    margin: 12px auto;
+    padding: 16px;
+    border-radius: 16px;
+  }
+}

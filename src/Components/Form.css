@@ -17,3 +17,18 @@ textarea{
     background-color: rgb(176, 93, 255);
     color: white;
 }
+
+@media (max-width: 576px) {
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .Form .btn {
+        flex: 1 1 100%;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+}

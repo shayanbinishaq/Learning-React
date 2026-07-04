@@ -290,15 +290,14 @@ const ProfileCardComponent = ({
   ]);
 
   const cardStyle = useMemo(
-    () => ({
-      '--icon': iconUrl ? `url(${iconUrl})` : 'none',
-      '--grain': grainUrl ? `url(${grainUrl})` : 'none',
-      '--inner-gradient': innerGradient ?? DEFAULT_INNER_GRADIENT,
-      '--behind-glow-color': behindGlowColor ?? 'rgba(125, 190, 255, 0.67)',
-      '--behind-glow-size': behindGlowSize ?? '50%'
-    }),
-    [iconUrl, grainUrl, innerGradient, behindGlowColor, behindGlowSize]
-  );
+  () => ({
+    '--grain': grainUrl ? `url(${grainUrl})` : 'none',
+    '--inner-gradient': innerGradient ?? DEFAULT_INNER_GRADIENT,
+    '--behind-glow-color': behindGlowColor ?? 'rgba(125, 190, 255, 0.67)',
+    '--behind-glow-size': behindGlowSize ?? '50%'
+  }),
+  [grainUrl, innerGradient, behindGlowColor, behindGlowSize]
+);
 
   const handleContactClick = useCallback(() => {
     onContactClick?.();

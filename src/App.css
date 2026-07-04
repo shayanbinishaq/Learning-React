@@ -22,3 +22,14 @@ html{
   width: 300px;
   z-index: 9999;
 }
+
+@media (max-width: 576px) {
+  .container {
+    width: calc(100% - 1rem);
+  }
+
+  .alert {
+    left: 0.5rem;
+    width: calc(100% - 1rem);
+  }
+}

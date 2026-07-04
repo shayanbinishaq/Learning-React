@@ -10,7 +10,6 @@
   --background-x: 50%;
   --background-y: 50%;
   --grain: none;
-  --icon: none;
   --behind-gradient: none;
   --behind-glow-color: rgba(125, 190, 255, 0.67);
   --behind-glow-size: 25%;
@@ -105,15 +104,10 @@
   background-color: rgba(0, 0, 0, 0.9);
   transform: none;
 }
-
 .pc-shine {
-  mask-image: var(--icon);
-  mask-mode: luminance;
-  mask-repeat: repeat;
-  mask-size: 150%;
-  mask-position: top calc(200% - (var(--background-y) * 5)) left calc(100% - var(--background-x));
   transition: filter 0.8s ease;
-  filter: brightness(0.66) contrast(1.33) saturate(0.33) opacity(0.5);
+  filter: brightness(0.45) contrast(1.1) saturate(0.15);
+  opacity: 0;
   animation: holo-bg 18s linear infinite;
   animation-play-state: running;
   mix-blend-mode: color-dodge;
@@ -428,8 +422,14 @@
 }
 
 @media (max-width: 768px) {
+  .pc-card-wrapper {
+    width: calc(100% - 1rem);
+    max-width: 500px;
+  }
+
   .pc-card {
     height: 70svh;
+    width: 100%;
     max-height: 450px;
   }
 
@@ -474,8 +474,13 @@
 }
 
 @media (max-width: 480px) {
+  .pc-card-wrapper {
+    width: calc(100% - 1rem);
+  }
+
   .pc-card {
     height: 60svh;
+    width: 100%;
     max-height: 380px;
   }
 
@@ -522,8 +527,13 @@
 }
 
 @media (max-width: 320px) {
+  .pc-card-wrapper {
+    width: calc(100% - 1rem);
+  }
+
   .pc-card {
     height: 55svh;
+    width: 100%;
     max-height: 320px;
   }
 
