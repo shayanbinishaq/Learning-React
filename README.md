@@ -1,12 +1,12 @@
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img width="1366" height="630" alt="image" src="https://github.com/user-attachments/assets/1a663b50-f87b-4bdd-adf0-675eba0f0a02" />
+<img width="1366" height="352" alt="image" src="https://github.com/user-attachments/assets/64230525-6072-4e48-b6b7-fb9bf584f6ac" />
+<img width="1366" height="605" alt="image" src="https://github.com/user-attachments/assets/5c24d449-5fe6-499c-bd94-8eccc98d1a15" />
+<img width="1337" height="476" alt="image" src="https://github.com/user-attachments/assets/ddb0b7e2-c477-4eec-99ae-3fa435a1ce2e" />
+<img width="1366" height="624" alt="image" src="https://github.com/user-attachments/assets/824dc1d2-82d6-47ae-9eaf-9b60e1f962f9" />
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-<img width="1366" height="759" alt="image" src="https://github.com/user-attachments/assets/f922f331-7375-46bc-80c8-274ef22ab913" />
 
 
 ## React Compiler
