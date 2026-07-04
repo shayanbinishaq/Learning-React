@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar({
   title = "Set title here",
@@ -12,9 +13,9 @@ export default function Navbar({
     <>
       <nav className={`navbar navbar-expand-sm navbar-${mode} bg-${mode}`}>
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            Shayan
-          </a>
+          <Link className="navbar-brand" to="/">
+            {title}
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -26,19 +27,14 @@ export default function Navbar({
           <div className="collapse navbar-collapse" id="mynavbar">
             <ul className="navbar-nav me-auto">
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Home
-                </a>
+                <Link className="nav-link" to="/about">
+                  {aboutText}
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#About">
-                  About us
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Link
-                </a>
+                <Link className="nav-link" to="/contact">
+                  View Profile
+                </Link>
               </li>
             </ul>
             <div className="color-themes">
